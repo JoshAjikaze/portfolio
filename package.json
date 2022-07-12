@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/JoshAjikaze/portfolio#readme",
   "devDependencies": {
-    "tailwindcss": "^3.1.5"
+    "tailwindcss": "^3.1.6"
   }
 }

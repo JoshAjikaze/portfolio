@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,61 +15,16 @@
       href="./img/Icon colour Purple.png"
       type="image/x-icon"
     />
+    <style>
+      *
+      {
+        border: 1px solid blue;
+      }
+    </style>
   </head>
-  <body class="dark:bg-colorDark">
-    <button
-      class="fixed top-[70vh] left-[70%] border-circle"
-      onclick="darkModeToggle()"
-    >
-      <i class="fas fa-moon dark:hidden text-dark"></i>
-      <i class="fas fa-sun hidden dark:block text-white"></i>
-    </button>
-    <!-- Navbar and logo -->
-    <div
-      class="container sticky top-0 left-0 flex flex-col items-center tablet:px-5 p-1 z-5 min-w-[100%] min-h-[50px] dark:bg-colorDarker shadow-lg"
-    >
-      <div class="flex min-w-[100%] justify-between items-center">
-        <a href="#" class="">
-          <div class="flex items-center space-x-3">
-            <img src="./img/Icon colour Purple.png" class="w-[40px]" alt="" />
-            <span class="text-colorDarker dark:text-white font-bold">
-              Optimus
-            </span>
-          </div>
-        </a>
-
-        <!-- navigation -->
-        <div>
-          <nav class="hidden space-x-3 tablet:flex">
-            <a
-              href="#"
-              class="font-normal p-[7px] text-colorDarker dark:text-white font-semibold"
-              >Home</a
-            >
-          </nav>
-
-          <nav class="tablet:hidden">
-            <i
-              onclick="navToggler()"
-              class="fas fa-bars text-colorDarker dark:text-white text-[25px]"
-            ></i>
-          </nav>
-        </div>
-      </div>
-      <div class="hidden min-w-[100%] mt-[20px] text-center" id="hidden-nav">
-        <a
-          href="#"
-          class="text-colorDarker dark:text-white border p-2 d-block w-[100%]"
-          >Home</a
-        >
-        <!-- style="width: 100%; display: block" -->
-      </div>
-    </div>
-
-    <div class="container relative mx-auto">
-      <h1>Joshua is my name</h1>
-    </div>
-  </body>
+  <body class="px-3">
+    
+    <div class="bg-colorDark w-100 h-[50px] flex">Container</div>
 
   <script>
     function darkModeToggle() {
