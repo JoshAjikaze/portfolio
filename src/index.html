@@ -22,9 +22,40 @@
       }
     </style>
   </head>
-  <body class="px-3">
+  <body class="">
     
-    <div class="bg-colorDark w-100 h-[50px] flex">Container</div>
+<div class="relative" style="background-image: linear-gradient(0deg, rgb(133, 116, 116), rgb(109, 109, 102) );background-size:100%; object-fit:cover; background-repeat:no-repeat; background-position: center; background-size: cover;
+">
+  <div class="absolute"></div>
+  <section class="flex p-[5px] items-center justify-between">
+    <div class="flex items-center space-x-[5px]">
+      <img src="./img/Icon colour Purple.png" class="w-[30px]" alt="">
+      <span class="font-bold text-[20px]">Optimus</span>
+    </div>
+    <nav class="tablet:hidden">
+      <i class="fas fa-bars p-[5px]"></i>
+    </nav>
+
+    <nav class="hidden space-x-[10px] tablet:flex">
+      <a href="#" class="hover:bg-[rgba(0,0,0,0.7)] hover:text-white p-[5px] px-[10px] font-light hover:font-bold transition ease-in-out duration-500">Home</a>
+      <a href="#" class="hover:bg-[rgba(0,0,0,0.7)] hover:text-white p-[5px] px-[10px] font-light hover:font-bold transition ease-in-out duration-500">About</a>
+      <a href="#" class="hover:bg-[rgba(0,0,0,0.7)] hover:text-white p-[5px] px-[10px] font-light hover:font-bold transition ease-in-out duration-500">Contact</a>
+    </nav>
+  </section>
+
+  <section class="flex flex-col items-center justify-center min-h-[50vh] tablet:min-h-[100vh] space-y-3 pt-[20px] dark:text-white">
+    <p class="text-[20px] font-bold p-[10px] tablet:text-[5vw] border-[3px] border-slate-800">
+      HELLO <span class="font-black">I'M</span> JOSHUA
+    </p>
+    <p class="flex flex-col items-center border-slate-800">
+      <span class="text-[10px] tablet:text-[2vw]">Welcome to my website</span>
+      <span class="text-center mx-2 text-[10px] tablet:text-[20px] laptop:text-[2vw]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, totam iste ea quasi est enim praesentium esse cupiditate excepturi</span>
+    </p>
+    <p class="mt-[90%]">
+      <i class="far fa-arrow-alt-circle-down"></i>
+    </p>
+  </section>
+</div>
 
   <script>
     function darkModeToggle() {

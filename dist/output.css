@@ -584,6 +584,10 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
 }
@@ -619,8 +623,33 @@ video {
   margin-right: 0px;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .mt-\[20px\] {
   margin-top: 20px;
+}
+
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
+.mt-\[100px\] {
+  margin-top: 100px;
+}
+
+.mt-\[1000px\] {
+  margin-top: 1000px;
+}
+
+.mt-\[90vh\] {
+  margin-top: 90vh;
+}
+
+.mt-\[90\%\] {
+  margin-top: 90%;
 }
 
 .block {
@@ -643,12 +672,28 @@ video {
   height: 50px;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
+.h-\[20px\] {
+  height: 20px;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
 .min-h-\[50px\] {
   min-height: 50px;
 }
 
 .min-h-\[50vh\] {
   min-height: 50vh;
+}
+
+.min-h-\[100vh\] {
+  min-height: 100vh;
 }
 
 .w-\[40px\] {
@@ -671,8 +716,24 @@ video {
   width: 100;
 }
 
+.w-\[30px\] {
+  width: 30px;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
 .min-w-\[100\%\] {
   min-width: 100%;
+}
+
+.min-w-\[500px\] {
+  min-width: 500px;
 }
 
 .flex-col {
@@ -681,6 +742,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -693,8 +758,72 @@ video {
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-\[10px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(10px * var(--tw-space-x-reverse));
+  margin-left: calc(10px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-\[15px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(15px * var(--tw-space-x-reverse));
+  margin-left: calc(15px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-\[150px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(150px * var(--tw-space-x-reverse));
+  margin-left: calc(150px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-\[5px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(5px * var(--tw-space-x-reverse));
+  margin-left: calc(5px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-8 {
+  border-width: 8px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-\[200px\] {
+  border-width: 200px;
+}
+
+.border-\[05px\] {
+  border-width: 05px;
+}
+
+.border-\[4px\] {
+  border-width: 4px;
+}
+
+.border-\[3px\] {
+  border-width: 3px;
+}
+
+.border-orange-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(251 146 60 / var(--tw-border-opacity));
+}
+
+.border-slate-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(30 41 59 / var(--tw-border-opacity));
 }
 
 .bg-colorDark {
@@ -718,9 +847,48 @@ video {
   padding: 0.75rem;
 }
 
+.p-\[30px\] {
+  padding: 30px;
+}
+
+.p-\[10px\] {
+  padding: 10px;
+}
+
+.p-\[5px\] {
+  padding: 5px;
+}
+
+.p-\[20px\] {
+  padding: 20px;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-\[5px\] {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.px-\[50px\] {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pt-\[20px\] {
+  padding-top: 20px;
+}
+
+.pt-\[500px\] {
+  padding-top: 500px;
 }
 
 .text-center {
@@ -729,6 +897,38 @@ video {
 
 .text-\[25px\] {
   font-size: 25px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
+}
+
+.text-\[35px\] {
+  font-size: 35px;
+}
+
+.text-\[10px\] {
+  font-size: 10px;
+}
+
+.text-\[2px\] {
+  font-size: 2px;
+}
+
+.text-\[100px\] {
+  font-size: 100px;
+}
+
+.text-\[5px\] {
+  font-size: 5px;
+}
+
+.text-\[50px\] {
+  font-size: 50px;
 }
 
 .font-bold {
@@ -741,6 +941,18 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-black {
+  font-weight: 900;
 }
 
 .text-white {
@@ -771,8 +983,51 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition {
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 * {
   /* border: 1px solid blue; */
+}
+
+.hover\:bg-colorDark:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(90 14 64 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[rgba\(0\2c 0\2c 0\2c 0\.7\)\]:hover {
+  background-color: rgba(0,0,0,0.7);
+}
+
+.hover\:font-bold:hover {
+  font-weight: 700;
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .dark .dark\:block {
@@ -807,8 +1062,60 @@ video {
     display: none;
   }
 
+  .tablet\:h-\[200px\] {
+    height: 200px;
+  }
+
+  .tablet\:min-h-\[100vh\] {
+    min-height: 100vh;
+  }
+
+  .tablet\:p-3 {
+    padding: 0.75rem;
+  }
+
   .tablet\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .tablet\:text-\[35px\] {
+    font-size: 35px;
+  }
+
+  .tablet\:text-\[10vw\] {
+    font-size: 10vw;
+  }
+
+  .tablet\:text-\[5vw\] {
+    font-size: 5vw;
+  }
+
+  .tablet\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .tablet\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .tablet\:text-\[2vw\] {
+    font-size: 2vw;
+  }
+
+  .tablet\:text-\[20px\] {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .laptop\:hidden {
+    display: none;
+  }
+
+  .laptop\:text-\[2vw\] {
+    font-size: 2vw;
   }
 }
